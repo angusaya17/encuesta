@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta de Visitantes</title>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <img src="img/espelogo.png" width="250" height="200" alt="ESPE - Latacunga" class="logo-icono">
+        <p><strong>Encuesta de visitantes - Parque Nacional Cotopaxi</strong></p>
+    </header>
+
+    <hr>
+
+    <section>
+    <form action="/enviar" method="POST">
+        
+        <h4>Ingrese su nombre y apellido</h4>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required>
+        <br><br>
+
+        <h4>Ingrese su correo electrónico</h4>
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+        <br><br>
+
+        <h4>Fecha estimada de visita</h4>
+        <label for="birthday">Fecha de visita:</label>
+        <input type="date" id="birthday" name="birthday">
+        <br><br>
+
+        <h4>Ingrese su edad</h4>
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" min="10" max="100">
+        <br><br>
+
+        <h4>Ciudad o país de procedencia</h4>
+        <label for="procedencia">Origen:</label>
+        <input type="text" id="procedencia" name="procedencia" placeholder="Ej. Quito, Ecuador">
+        <br><br>
+
+        <h4>¿Cómo planeas realizar tu viaje?</h4>
+        <input type="radio" id="compania1" name="compania" value="solitario">
+        <label for="compania1">Viaje en solitario</label><br>
+        <input type="radio" id="compania2" name="compania" value="pareja">
+        <label for="compania2">En pareja</label><br>
+        <input type="radio" id="compania3" name="compania" value="familia">
+        <label for="compania3">En familia con niños</label><br>
+        <input type="radio" id="compania4" name="compania" value="amigos">
+        <label for="compania4">Con un grupo de amigos</label>
+        <br><br>
+
+        <h4>¿Qué actividades principales te gustaría realizar? (Selecciona varias)</h4>
+        <input type="checkbox" id="act1" name="actividades" value="senderismo">
+        <label for="act1">Senderismo hacia la Laguna de Limpiopungo</label><br>
+        <input type="checkbox" id="act2" name="actividades" value="refugio">
+        <label for="act2">Intento de ascenso al Refugio José Rivas</label><br>
+        <input type="checkbox" id="act3" name="actividades" value="ciclismo">
+        <label for="act3">Ciclismo de montaña</label><br>
+        <input type="checkbox" id="act4" name="actividades" value="fotografia">
+        <label for="act4">Fotografía de paisajes y fauna</label>
+        <br><br>
+
+        <h4>¿En qué medio de transporte planeas llegar?</h4>
+        <input type="radio" id="trans1" name="transporte" value="propio">
+        <label for="trans1">Vehículo propio (4x4)</label><br>
+        <input type="radio" id="trans2" name="transporte" value="alquilado">
+        <label for="trans2">Vehículo alquilado</label><br>
+        <input type="radio" id="trans3" name="transporte" value="publico">
+        <label for="trans3">Transporte público</label><br>
+        <input type="radio" id="trans4" name="transporte" value="tour">
+        <label for="trans4">Tour contratado</label>
+        <br><br>
+
+        <!-- Campo 9: Experiencia en alta montaña (Botones de radio) -->
+        <h4>¿Cómo calificarías tu experiencia previa en alta montaña?</h4>
+        <input type="radio" id="exp1" name="experiencia" value="principiante">
+        <label for="exp1">Principiante (nunca he estado a esa altura)</label><br>
+        <input type="radio" id="exp2" name="experiencia" value="intermedio">
+        <label for="exp2">Intermedio (caminatas moderadas previas)</label><br>
+        <input type="radio" id="exp3" name="experiencia" value="avanzado">
+        <label for="exp3">Avanzado (acostumbrado a cumbres)</label>
+        <br><br>
+
+        <h4>Comentarios o requerimientos especiales</h4>
+        <label for="comentarios">Escribe tus observaciones:</label><br>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="40" placeholder="Restricciones alimentarias, dudas, etc."></textarea>
+        <br><br>
+
+        <button type="submit">Enviar encuesta completa</button>
+    </form>
+</section>
+
+</body>
+
+</html>
